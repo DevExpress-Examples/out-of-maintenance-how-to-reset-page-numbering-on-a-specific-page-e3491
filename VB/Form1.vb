@@ -23,7 +23,7 @@ Namespace RichEditResetPageNumbering
 
             ' Add a new section and configure its page numbering
             richEditControl1.Document.AppendSection()
-            richEditControl1.Document.Sections(richEditControl1.Document.Sections.Count - 1).PageNumbering.Start = 1
+            richEditControl1.Document.Sections(richEditControl1.Document.Sections.Count - 1).PageNumbering.FirstPageNumber = 1
             richEditControl1.Document.AppendText(StringSample.SampleText)
         End Sub
     End Class
