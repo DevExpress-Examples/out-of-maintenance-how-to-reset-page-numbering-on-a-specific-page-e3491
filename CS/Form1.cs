@@ -21,8 +21,8 @@ namespace RichEditResetPageNumbering {
 
             // Add a new section and configure its page numbering
             richEditControl1.Document.AppendSection();
-            documentServer.Document.Sections[documentServer.Document.Sections.Count - 1].PageNumbering.FirstPageNumber = 1;
-            documentServer.Document.Sections[documentServer.Document.Sections.Count - 1].PageNumbering.ContinueNumbering = false;
+            richEditControl1.Document.Sections[documentServer.Document.Sections.Count - 1].PageNumbering.FirstPageNumber = 1;
+            richEditControl1.Document.Sections[documentServer.Document.Sections.Count - 1].PageNumbering.ContinueNumbering = false;
             richEditControl1.Document.AppendText(StringSample.SampleText);
         }
     }
